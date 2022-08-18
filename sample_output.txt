@@ -1,0 +1,57 @@
+CountryRequestCount job:
+Command: ./gradlew run --args="CountryRequestCount input_access_log OUTPUT_DIRECTORY"
+- Uses hostname_country.csv for the countries (hardcoded)
+- access.log in input_access_log as the other input
+
+Output:
+Australia	17
+Canada	127
+Denmark	4
+Finland	1
+France	16
+Germany	13
+Intranet	198
+Israel	19
+Korea	4
+Los Alamos	1
+Mexico	1
+Netherlands	2
+Robot	80
+Spain	4
+Taiwan	1
+United Kingdom	6
+United States	87
+Unknown Location	812
+Wherever You Want to Ship	13
+
+
+CountryURLCount job:
+Command: ./gradlew run --args="CountryURLCount input_access_log OUTPUT_DIRECTORY"
+- Uses hostname_country.csv for the countries (hardcoded)
+- access.log in input_access_log as the other input
+
+Output:
+Australia /icons/PythonPowered.png	1
+Australia /icons/gnu-head-tiny.jpg	1
+Australia /icons/mailman.jpg	1
+Australia /mailman	1
+Australia /mailman/admin	1
+Australia /mailman/admin/webct	1
+Australia /mailman/listinfo	2
+Australia /mailman/listinfo/administration	1
+Australia /mailman/listinfo/cnc_notice	1
+Australia /twiki/bin/view/Main/SpamAssassinAndPostFix	2
+Australia /twiki/bin/view/Main/SpamAssassinDeleting	2
+Australia /twiki/bin/view/Main/SpamAssassinTaggingOnly	1
+Australia /twiki/bin/view/Main/WebHome	1
+Australia /twiki/pub/TWiki/TWikiLogos/twikiRobot46x50.gif	1
+Canada /	4
+Canada /LateEmail.html	1
+Canada /RBL.html	1
+Canada /SpamAssassin.html	1
+Canada /cgi-bin/mailgraph.cgi/mailgraph_0.png	2
+Canada /cgi-bin/mailgraph.cgi/mailgraph_0_err.png	2
+Canada /cgi-bin/mailgraph.cgi/mailgraph_1.png	2
+Canada /cgi-bin/mailgraph.cgi/mailgraph_1_err.png	2
+Canada /cgi-bin/mailgraph.cgi/mailgraph_2.png	2
+...
